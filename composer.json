@@ -1,0 +1,20 @@
+{
+	"name": "georgringer/container-modify-fields",
+	"type": "typo3-cms-extension",
+	"description": "Hide fields of content elements if inside container",
+	"homepage": "https://github.com/b13/codeblock",
+	"license": ["GPL-2.0-or-later"],
+	"require": {
+		"b13/container": "^1.5"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "container_modify_fields"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"GeorgRinger\\ContainerHidefields\\": "Classes/"
+		}
+	}
+}
