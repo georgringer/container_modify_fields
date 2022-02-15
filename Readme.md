@@ -44,6 +44,8 @@ TCEFORM.tt_content.container {
         header.disabled = 1
       }
     }
+  }
+}
 ```
 
 
