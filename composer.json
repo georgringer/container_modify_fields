@@ -14,7 +14,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"GeorgRinger\\ContainerHidefields\\": "Classes/"
+			"GeorgRinger\\ContainerModifyFields\\": "Classes/"
 		}
 	}
 }
