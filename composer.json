@@ -5,7 +5,8 @@
 	"homepage": "https://github.com/b13/codeblock",
 	"license": ["GPL-2.0-or-later"],
 	"require": {
-		"b13/container": "^1.5"
+		"b13/container": "^1.5",
+		"typo3/cms-backend": "^9.5 || ^10.4 || ^11.5"
 	},
 	"extra": {
 		"typo3/cms": {
