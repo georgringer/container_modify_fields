@@ -1,8 +1,8 @@
 {
 	"name": "georgringer/container-modify-fields",
 	"type": "typo3-cms-extension",
-	"description": "Hide fields of content elements if inside container",
-	"homepage": "https://github.com/b13/codeblock",
+	"description": "Manipulate content elements which are children inside a EXT:container container",
+	"homepage": "https://github.com/georgringer/container_modify_fields",
 	"license": ["GPL-2.0-or-later"],
 	"require": {
 		"b13/container": "^1.5",
