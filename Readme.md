@@ -21,6 +21,7 @@ The configuration must be done in PageTsConfig with the following syntax:
             # currently supported is only:
             required = 1
             disabled = 1
+            fixedItemValue = 1
         }
 
         # Instead of <colpos> and <child-ctype> also "_all" is valid
@@ -61,6 +62,28 @@ TCEFORM.tt_content.container {
       header {
         header.required = 1
       }
+    }
+  }
+}
+
+```
+
+### Example 3: fixedItemValue
+
+This setting works only with select items: all other items are removed, so its value can't be changed any more. 
+
+> The behaviour of all elements inside accordion container is changed:
+> - the `header_layout` is set to `Hidden [100]`. In accordion, field "header" is used for accordion header and shouldn't be displayed in content block
+> - the `space_before_class` is set to `small` (=> example for string values)
+
+```
+TCEFORM.tt_content.container {
+  accordion.101._all {
+    header_layout {
+      fixedItemValue = 100
+    }
+    space_before_class {
+      fixedItemValue = small
     }
   }
 }
