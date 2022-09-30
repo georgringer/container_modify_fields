@@ -76,6 +76,15 @@ class Modify extends AbstractItemProvider implements FormDataProviderInterface
                 $eval .= ',required';
                 $result['processedTca']['columns'][$fieldName]['config']['eval'] = $eval;
             }
+            if (isset($fieldConfiguration['fixedItemValue']) &&
+                array_key_exists('items', $result['processedTca']['columns'][$fieldName]['config'])) {
+                $items =  $result['processedTca']['columns'][$fieldName]['config']['items'];
+                foreach ($items as $key => $item) {
+                    if ($item[1] != $fieldConfiguration['fixedItemValue']) {
+                        unset($result['processedTca']['columns'][$fieldName]['config']['items'][$key]);
+                    }
+                }
+            }
         }
     }
 }
